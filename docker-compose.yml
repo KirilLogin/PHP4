@@ -1,0 +1,8 @@
+services:
+  php-cli:
+    build: .
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    entrypoint: ["php"]
+    tty: true
